@@ -958,6 +958,7 @@ footer {
     margin-bottom: 50px;
 }
 
+
 /* Left Side - Contact Information */
 .footer-contact-info h3 {
     color: white;
@@ -1021,6 +1022,22 @@ footer {
     color: rgba(255, 255, 255, 0.8);
     margin: 0;
 }
+
+/* Fix for mobile phone number blue link styling */
+.contact-text p {
+    color: rgba(255, 255, 255, 0.8) !important;
+    text-decoration: none !important;
+    pointer-events: none;
+}
+
+/* Specifically target the phone number */
+.contact-detail-item:nth-child(2) .contact-text p {
+    color: rgba(255, 255, 255, 0.8) !important;
+    text-decoration: none !important;
+    pointer-events: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
 
 /* Social Icons in Footer */
 .footer-social-links {
